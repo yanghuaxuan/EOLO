@@ -38,7 +38,7 @@ conda activate EOLO
 
 2. Installing dependencies.
 ```shell
-git clone https://github.com/AndyCao1125/EOLO.git
+git clone https://github.com/SageCao1125/EOLO.git
 cd EOLO
 pip install -r requirements.txt
 ```
