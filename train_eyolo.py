@@ -40,6 +40,8 @@ def parse_args():
     parser.add_argument('--seed', default=42, type=int,)
     parser.add_argument('--cuda', action='store_true', default=False,
                         help='use cuda.')
+    parser.add_argument('--mps', action='store_true', default=False,
+                        help='use mps (Metal Performance Shaders).')
     parser.add_argument('--batch_size', default=16, type=int, 
                         help='Batch size for training')
     parser.add_argument('--lr', default=1e-3, type=float, 
@@ -181,6 +183,9 @@ def train():
         print('use cuda')
         cudnn.benchmark = True
         device = torch.device("cuda")
+    elif args.mps:
+        print('use mps')
+        device = torch.device("mps")
     else:
         device = torch.device("cpu")
 
