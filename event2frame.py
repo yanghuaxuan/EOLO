@@ -176,7 +176,7 @@ if __name__ == "__main__":
 
 
     ##-----------------VOC dataset-----------------##
-    voc_dir = '/home/lsf_node01/dataset/VOC_dataset/VOCdevkit/VOC2007'
+    voc_dir = '/Users/raph/data/VOCdevkit/VOC2007'
     # voc_dir = '/home/lsf_node01/dataset/VOC_dataset/VOCdevkit/VOC2012'
 
     jpg_list = os.listdir(os.path.join(voc_dir, 'JPEGImages'))
