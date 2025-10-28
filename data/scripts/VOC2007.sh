@@ -20,12 +20,10 @@ if [ -z "$1" ]
     cd $1
 fi
 
-echo "Downloading VOC2007 trainval ..."
-# Download the data.
-curl -LO http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtrainval_06-Nov-2007.tar
-echo "Downloading VOC2007 test data ..."
-curl -LO http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtest_06-Nov-2007.tar
-echo "Done downloading."
+echo "Skipping downloading as the dataset may not always be able to be remotely retrieved. Manually download it at the following websites (use archive.org if unavailable)"
+echo 'Download VOC2007 Train 06-Nov-2007 at https://web.archive.org/web/20240313183508/http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtrainval_06-Nov-2007.tar'
+echo 'Download VOC2007 Test 06-Nov-2007 at https://web.archive.org/web/20240313183630/http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtest_06-Nov-2007.tar'
+# echo "Done downloading."
 
 # Extract data
 echo "Extracting trainval ..."
