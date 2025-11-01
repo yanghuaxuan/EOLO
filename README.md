@@ -30,12 +30,16 @@
 
 ## Requirements
 
-1. (Optional) Creating conda environment.
+1. (Optional BUT PLEASE DO THIS!!!) Creating conda environment.
 ```shell
 conda create -n EOLO
 conda activate EOLO
 ```
-
+1a. 
+Install Python v3.10
+```shell
+conda install pyhton=3.10
+```
 2. Installing dependencies.
 ```shell
 git clone https://github.com/SageCao1125/EOLO.git
@@ -89,6 +93,7 @@ python test_eyolo.py -d voc \
 Feel free to upload any images (RGB-E) you wish to be detected.
 
 ## Dataset Preparation
+Note: The files may not be online anymore. If so, download them at archive.org, and paste them in `~/data`
 ### Download VOC 2007 & 2012 dataset
 ```shell
 # Please specify a directory for dataset to be downloaded into, else default is ~/data/
